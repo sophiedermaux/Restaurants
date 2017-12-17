@@ -1,14 +1,25 @@
-<h1> Restaurants </h1>
+<div class="home-banner">
+  <h1> London Restaurant finder </h1>
 
-<form action="/restaurants" method="get">
-  <input type="text" name="food_type" placeholder="What sort of food do you fancy?">
-  <input type="submit">
-</form>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <h2>Find some of the best Indian and Chinese restaurants in London</h2>
+        <form action="/restaurants" method="get">
+            <input type="text" name="food_type" placeholder="Chinese or Indian?">
+            <input type="submit">
+        </form>
+    </div>
+  </div>
+</div>
+</div>
 
-<h1> Add a restaurant </h1>
-<form action="/restaurants" method="post">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <input type="text" name="name" placeholder="Name">
-  <input type="text" name="address" placeholder="Address">
-  <input type="submit">
-</form>
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,12 @@
-<h1><%= @restaurant[:name] %></h1>
-
-<p> The location of the restaurant is <%= @restaurant[:address] %></p>
-
-<p> Cuisine: <%= @restaurant[:category] %>
+<div class= "show-banner">
+  <h1><%= @restaurant[:name] %></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <p> The location of the restaurant is <%= @restaurant[:address] %></p>
+      <p> Cuisine: <%= @restaurant[:category] %>
+      <p><%= link_to "Back to all restaurants", restaurants_path %></p>
+    </div>
+  </div>
+</div>
+</div>
