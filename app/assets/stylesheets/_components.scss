@@ -7,9 +7,19 @@
 }
 
 .show-banner {
-  background-color: white;
+  background-image: url('michael-browning-14090.jpg');
+  background-size: cover;
   height: 100vh;
   color: #555555;
   text-align: center;
   padding-top: 40vh;
+}
+
+.index-banner {
+  background-color: white;
+  height: 100vh;
+  color: #555555;
+  text-align: center;
+  padding-top: 10vh;
+
 }

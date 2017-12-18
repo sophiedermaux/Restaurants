@@ -1,9 +1,9 @@
-<h1>  All Restaurants </h1>
-
-
-<% @restaurants.each do |restaurant| %>
-  <h2><%= restaurant[:name] %></h2>
-  <p><%= restaurant[:address] %></p>
-  <p><%= restaurant[:food_type] %></p>
-  <%= link_to "More details on restaurant", restaurant_path(restaurant) %>
-<% end %>
+<div class= "index-banner">
+  <h1> All Restaurants </h1>
+    <% @restaurants.each do |restaurant| %>
+    <h2><%= restaurant[:name] %></h2>
+    <p><%= restaurant[:address] %></p>
+    <p><%= restaurant[:food_type] %></p>
+    <%= link_to "More details on restaurant", restaurant_path(restaurant) %>
+  <% end %>
+</div>

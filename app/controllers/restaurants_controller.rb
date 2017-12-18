@@ -5,9 +5,11 @@ class RestaurantsController < ApplicationController
   end
 
   def index
-    @restaurants = Restaurant.all
-    @category = params[:food_type]
-    @restaurants = Restaurant.select { |id, restaurant| restaurant[:category] == @category }
+    if params[:food_type].nil?
+      @restaurants = Restaurant.all
+    else
+      @restaurants = Restaurant.select { |restaurant| restaurant.category.capitalize == params[:food_type].capitalize}
+    end
   end
 end
 

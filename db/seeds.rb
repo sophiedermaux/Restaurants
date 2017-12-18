@@ -1,6 +1,7 @@
-Restaurant.create(name: "Dishoom", address: "Shoreditch", category: "Indian")
-Restaurant.create(name: "Gun Powder", address: "Shoreditch", category: "Indian")
-Restaurant.create(name: "Zumbura", address: "Clapham", category: "Indian")
-Restaurant.create(name: "Dumplings Legend", address: "Soho", category: "Chinese")
-Restaurant.create(name: "Min Jiang", address: "Kensington", category: "Chinese")
-Restaurant.create(name: "Hunan", address: "Pimlico", category: "Chinese")
+Restaurant.destroy_all
+Restaurant.create(name: "Dishoom", address: "Shoreditch", category: "indian")
+Restaurant.create(name: "Gun Powder", address: "Shoreditch", category: "indian")
+Restaurant.create(name: "Zumbura", address: "Clapham", category: "indian")
+Restaurant.create(name: "Dumplings Legend", address: "Soho", category: "chinese")
+Restaurant.create(name: "Min Jiang", address: "Kensington", category: "chinese")
+Restaurant.create(name: "Hunan", address: "Pimlico", category: "chinese")
